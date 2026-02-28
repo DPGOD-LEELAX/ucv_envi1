@@ -4,15 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
   <title>Leaf Me Alone · breathe green</title>
-  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
   <style>
-
-  </style>
+</style>
 </head>
 <body>
+  <!-- Floating background elements -->
+  <div class="floating-bg">
+    <i class="fas fa-leaf"></i>
+    <i class="fas fa-seedling"></i>
+    <i class="fas fa-tree"></i>
+    <i class="fas fa-leaf"></i>
+    <i class="fas fa-seedling"></i>
+  </div>
+
+  <!-- WELCOME OVERLAY - appears first, then fades out -->
+  <div class="welcome-overlay" id="welcomeOverlay">
+    <div class="floating-leaves">
+      <i class="fas fa-leaf"></i>
+      <i class="fas fa-leaf"></i>
+      <i class="fas fa-leaf"></i>
+      <i class="fas fa-leaf"></i>
+      <i class="fas fa-seedling"></i>
+    </div>
+    <div class="welcome-content">
+      <i class="fas fa-leaf"></i>
+      <h1>Leaf Me Alone</h1>
+      <p>grow with nature · thrive sustainably</p>
+      <button class="welcome-btn" id="enterBtn">enter &nbsp;🌿</button>
+    </div>
+  </div>
+
   <div class="container">
     <!-- Sticky Nav with blur -->
     <div class="navbar" id="navbar">
@@ -189,7 +213,7 @@
 
     <!-- Footer -->
     <div class="footer">
-        <div>🪴 Leaf Me Alone · est. 2025</div>
+        <div>🪴 Leaf Me Alone · UCV. 2025</div>
         <div class="social">
             <a href="https://www.instagram.com" target="_blank">
             <i class="fa-brands fa-instagram"></i>
@@ -204,11 +228,9 @@
             <i class="fa-brands fa-youtube"></i>
             </a>
         </div>
-        </div>
+    </div>
   </div>
 
-
-<script src="script.js"></script>
-  </style>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,20 @@
     (function() {
+      // WELCOME OVERLAY SCRIPT
+      const overlay = document.getElementById('welcomeOverlay');
+      const enterBtn = document.getElementById('enterBtn');
+
+      // Check if first visit (using sessionStorage)
+      if (sessionStorage.getItem('welcomeShown')) {
+        overlay.classList.add('hidden');
+      } else {
+        overlay.classList.remove('hidden');
+      }
+
+      enterBtn.addEventListener('click', () => {
+        overlay.classList.add('hidden');
+        sessionStorage.setItem('welcomeShown', 'true');
+      });
+
       // mobile toggle
       const menuToggle = document.getElementById('menuToggle');
       const navLinks = document.getElementById('navLinks');
@@ -9,7 +25,6 @@
         });
       }
 
-
       const navItems = document.querySelectorAll('.nav-links a');
       navItems.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -17,10 +32,8 @@
           if (window.innerWidth <= 760) {
             navLinks.classList.remove('show');
           }
-
         });
       });
-
 
       document.addEventListener('click', (e) => {
         if (window.innerWidth <= 760 && navLinks.classList.contains('show')) {
@@ -30,7 +43,6 @@
         }
       });
 
-
       const navbar = document.getElementById('navbar');
       window.addEventListener('scroll', () => {
         if (window.scrollY > 20) {
@@ -39,7 +51,6 @@
           navbar.classList.remove('shadow');
         }
       });
-
 
       const treeStat = document.getElementById('treeStat');
       const waterStat = document.getElementById('waterStat');
@@ -68,7 +79,6 @@
         item.addEventListener('click', (e) => {
           e.stopPropagation();
           updateStats();
-
           item.style.background = '#daf0cf';
           item.style.borderRadius = '40px';
           setTimeout(() => {
@@ -76,7 +86,6 @@
           }, 150);
         });
       });
-
 
       const subBtn = document.getElementById('subscribeBtn');
       const emailInput = document.getElementById('emailInput');
