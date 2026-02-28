@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>Leaf Me Alone · breathe green</title>
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sticky Nav with blur -->
+    <div class="navbar" id="navbar">
+      <div class="logo">
+        <i class="fas fa-leaf"></i> Leaf Me Alone
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="menu"><i class="fas fa-bars"></i></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#stats">Impact</a>
+        <a href="#studies">Studies</a>
+        <a href="#articles">Living</a>
+        <a href="#join">Join</a>
+      </div>
+    </div>
+
+    <!-- Home section-->
+    <div id="home" style="scroll-margin-top: 80px;"></div>
+
+    <!-- Hero Section here -->
+    <div class="hero">
+      <div class="hero-content">
+        <span class="highlight"><i class="fa-regular fa-star"></i> future is green</span>
+        <h1>Grow with nature, <br>sustainably.</h1>
+        <p>We build a planet‑first community. Small daily choices, massive impact. Explore ideas, share actions, restore the earth.</p>
+        <div class="btn-group">
+          <a href="#gallery" class="btn-primary"><i class="fa-regular fa-hand-peace"></i> explore gallery</a>
+          <a href="#join" class="btn-outline"><i class="fa-regular fa-comment"></i> join movement</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <i class="fas fa-seedling"></i>
+      </div>
+    </div>
+
+    <!-- Gallery section Here atm -->
+    <div id="gallery" class="section-title">
+      <h2>🌿 living gallery</h2>
+      <p>real projects, real hope — from forests to urban gardens</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <div class="gallery-img"><i class="fas fa-tree"></i></div>
+        <div class="gallery-content">
+          <h3>urban forest</h3>
+          <p>12,000 trees planted in metro areas last year. cleaner air, cooler streets.</p>
+          <span class="gallery-tag"><i class="fa-regular fa-clock"></i> 2 days ago</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img"><i class="fas fa-solar-panel"></i></div>
+        <div class="gallery-content">
+          <h3>solar energies</h3>
+          <p>renewable energy for communities </p>
+          <span class="gallery-tag"><i class="fa-regular fa-sun"></i> 1 week ago</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img"><i class="fas fa-fish"></i></div>
+        <div class="gallery-content">
+          <h3>ocean cleanup</h3>
+          <p>8+ tons of plastic removed from coastline this month.</p>
+          <span class="gallery-tag"><i class="fa-solid fa-water"></i> 3 days ago</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img"><i class="fas fa-carrot"></i></div>
+        <div class="gallery-content">
+          <h3>community gardens</h3>
+          <p>220 families grow organic food together. soil health = people health.</p>
+          <span class="gallery-tag"><i class="fa-regular fa-heart"></i> just now</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats / Impact section (with id for nav) -->
+    <div id="stats" class="stats-row">
+      <div class="stat-item">
+        <i class="fas fa-tree"></i>
+        <div class="stat-number" id="treeStat">18.3k</div>
+        <div class="stat-label">trees planted</div>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-droplet"></i>
+        <div class="stat-number" id="waterStat">2.8M</div>
+        <div class="stat-label">liters saved</div>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-solar-panel"></i>
+        <div class="stat-number" id="energyStat">9.2</div>
+        <div class="stat-label">MWh clean</div>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-hand-holding-heart"></i>
+        <div class="stat-number" id="peopleStat">4.5k</div>
+        <div class="stat-label">active members</div>
+      </div>
+    </div>
+
+    <!-- ===== RELATED STUDIES SECTION DITO ===== -->
+    <div id="studies" class="section-title">
+      <h2>📋 related studies</h2>
+      <p>peer‑reviewed research that backs our mission</p>
+    </div>
+
+    <div class="studies-row">
+      <div class="study-card">
+        <i class="fas fa-leaf"></i>
+        <h4>urban cooling</h4>
+        <div class="source">Nature · 2024</div>
+        <p>Tree cover reduces city temps by up to 3.5°C — every 10% canopy adds 1.2°C cooling.</p>
+        <span class="study-stat">cited 340+</span>
+      </div>
+      <div class="study-card">
+        <i class="fas fa-water"></i>
+        <h4>blue carbon</h4>
+        <div class="source">Science · 2025</div>
+        <p>Mangroves store 4x more carbon per hectare than tropical forests. Protecting them is crucial.</p>
+        <span class="study-stat">IPCC reference</span>
+      </div>
+      <div class="study-card">
+        <i class="fas fa-solar-panel"></i>
+        <h4>community solar</h4>
+        <div class="source">Joule · 2024</div>
+        <p>Local solar co-ops reduce emissions 27% faster than utility projects. Energy democracy works.</p>
+        <span class="study-stat">policy brief</span>
+      </div>
+      <div class="study-card">
+        <i class="fas fa-seedling"></i>
+        <h4>soil regeneration</h4>
+        <div class="source">Frontiers · 2025</div>
+        <p>Regenerative ag can draw down 1.5Gt CO₂/year if scaled. Key for 1.5°C pathway.</p>
+        <span class="study-stat">meta-analysis</span>
+      </div>
+    </div>
+
+    <!-- Articles section Dito -->
+    <div id="articles" class="section-title">
+      <h2>🏡 Simple Living</h2>
+      <p>tips & stories from the community</p>
+    </div>
+    <div class="card-row">
+      <div class="article-card">
+        <i class="fas fa-house-chimney"></i>
+        <h4>home composting</h4>
+        <p>turn scraps into black gold. easy 3‑step guide.</p>
+        <a href="#" class="article-link">read more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="article-card">
+        <i class="fas fa-bicycle"></i>
+        <h4>zero-commute</h4>
+        <p>how to bike & walk more — save money, emit nothing.</p>
+        <a href="#" class="article-link">read more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="article-card">
+        <i class="fas fa-seedling"></i>
+        <h4>rewilding 101</h4>
+        <p>let your garden grow wild & invite pollinators.</p>
+        <a href="#" class="article-link">read more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+
+    <div id="join" class="newsletter">
+      <h3><i class="fa-solid fa-leaf"></i> join the nest</h3> 
+      <p>monthly ideas, actions & events — no spam, only planet love.</p>
+      <div class="form-group">
+        <input type="email" placeholder="juan.delacruz@gmail.com" id="emailInput" inputmode="email">
+        <button type="submit" id="subscribeBtn"><i class="fa-regular fa-paper-plane"></i> sign up</button>
+      </div>
+      <div id="formFeedback"></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>🪴 Leaf Me Alone · est. 2025</div>
+        <div class="social">
+            <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://github.com" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        </div>
+  </div>
+
+
+<script src="script.js"></script>
+  </style>
+</body>
+</html>
